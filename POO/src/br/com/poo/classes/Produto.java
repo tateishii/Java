@@ -9,7 +9,7 @@ public class Produto {
 	private Fornecedor fornecedor;
 	
 	//Vamos criar um método construtor. Este método é
-	// executado todas as vezes que uma classe é instânciada
+	//executado todas as vezes que uma classe é instânciada
 	public Produto(int id, String nome, double preco, int quantidade, Categoria categoria, Fornecedor fornecedor) {
 		this.id = id;
 		this.nome = nome;
@@ -22,18 +22,18 @@ public class Produto {
 	public Produto() {}
 	
 	public void cadastrar() {
-		System.out.println("Produto Cadastradpo");
+		System.out.println("Produto cadastrado");
 	}
-	
 	public void listar() {
 		System.out.println(
 				"\nId do Produto:"+id+
 				"\nNome:"+nome+
-				"\nPreco:"+preco+
+				"\nPreço:"+preco+
 				"\nQuantidade:"+quantidade+
 				"\nCategoria:"+categoria.titulo+
 				"\nFornecedor:"+fornecedor.nomeFantasia
 				);
+		
 	}
 
 	public int getId() {
@@ -83,5 +83,4 @@ public class Produto {
 	public void setFornecedor(Fornecedor fornecedor) {
 		this.fornecedor = fornecedor;
 	}
-
 }
