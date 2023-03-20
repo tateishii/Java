@@ -6,10 +6,7 @@ public class CriarProduto {
 
 	public static void main(String[] args) {
 		
-		Produto prod = new Produto();
-		prod.setId(10);
-		prod.setNome("Sabão");
-		
+		Produto prod = new Produto();		
 		prod.cadastrar();
 		prod.listar();
 	}
